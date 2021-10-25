@@ -1,0 +1,56 @@
+#!/bin/sh
+rm -f intermine.log
+
+echo ""
+echo "#######################################################################################################################################"
+echo "#######################################################################################################################################"
+echo "#################################################### CICERMINE INTEGRATE ##############################################################"
+echo "#######################################################################################################################################"
+echo "#######################################################################################################################################"
+echo ""
+
+# ## ontologies and InterPro
+# ./gradlew integrate --stacktrace -Psource=go
+# ./gradlew integrate --stacktrace -Psource=so
+# ./gradlew integrate --stacktrace -Psource=interpro
+# ./gradlew integrate --stacktrace -Psource=interpro-go
+# ./gradlew integrate --stacktrace -Psource=plant-ontology
+# ./gradlew integrate --stacktrace -Psource=plant-trait-ontology
+# ./gradlew integrate --stacktrace -Psource=chickpea-crop-ontology
+
+## LIS gene families
+./gradlew integrate --stacktrace -Psource=legume.genefam.fam1.M65K
+./gradlew integrate --stacktrace -Psource=legume.genefam.fam1.M65K.trees_ML_rooted
+
+# ./gradlew integrate --stacktrace -Psource=cicar-about
+# ./gradlew integrate --stacktrace -Psource=cicec-about
+# ./gradlew integrate --stacktrace -Psource=cicre-about
+
+# ./gradlew integrate --stacktrace -Psource=CDCFrontier.gnm3.QT0P.genome_main
+# ./gradlew integrate --stacktrace -Psource=S2Drd065.gnm1.R888.genome_main
+# ./gradlew integrate --stacktrace -Psource=Besev079.gnm1.2FZC.genome_main
+
+# ./gradlew integrate --stacktrace -Psource=CDCFrontier.gnm3.ann1.NPD7.cds.fna
+# ./gradlew integrate --stacktrace -Psource=S2Drd065.gnm1.ann1.YZ9H.cds.fna
+# ./gradlew integrate --stacktrace -Psource=Besev079.gnm1.ann1.F01Z.cds.fna
+
+# ./gradlew integrate --stacktrace -Psource=CDCFrontier.gnm3.ann1.NPD7.gene_models_main
+# ./gradlew integrate --stacktrace -Psource=S2Drd065.gnm1.ann1.YZ9H.gene_models_main
+# ./gradlew integrate --stacktrace -Psource=Besev079.gnm1.ann1.F01Z.gene_models_main
+
+# ./gradlew integrate --stacktrace -Psource=CDCFrontier.gnm3.ann1.NPD7.protein
+# ./gradlew integrate --stacktrace -Psource=S2Drd065.gnm1.ann1.YZ9H.protein
+# ./gradlew integrate --stacktrace -Psource=Besev079.gnm1.ann1.F01Z.protein
+
+# ./gradlew integrate --stacktrace -Psource=CDCFrontier.gnm3.ann1.NPD7.transcript.fna
+# ./gradlew integrate --stacktrace -Psource=S2Drd065.gnm1.ann1.YZ9H.transcript.fna
+# ./gradlew integrate --stacktrace -Psource=Besev079.gnm1.ann1.F01Z.transcript.fna
+
+# ./gradlew integrate --stacktrace -Psource=CDCFrontier.gnm3.ann1.NPD7.legfed_v1_0.gfa
+# ./gradlew integrate --stacktrace -Psource=S2Drd065.gnm1.ann1.YZ9H.legfed_v1_0.gfa
+# ./gradlew integrate --stacktrace -Psource=Besev079.gnm1.ann1.F01Z.legfed_v1_0.gfa
+
+# ./gradlew integrate --stacktrace -Psource=CDCFrontier.gnm3.ann1.NPD7.legfed_v1_0.pathway
+# ./gradlew integrate --stacktrace -Psource=S2Drd065.gnm1.ann1.YZ9H.legfed_v1_0.pathway
+# ./gradlew integrate --stacktrace -Psource=Besev079.gnm1.ann1.F01Z.legfed_v1_0.pathway
+
