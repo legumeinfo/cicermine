@@ -1,0 +1,11 @@
+#!/bin/sh
+NC='\033[0m'
+LP='\033[1;35m'
+
+echo -e "#################################################################"
+echo -e "############################ ${LP}GENOMES${NC} ############################"
+echo -e "#################################################################"
+
+./gradlew integrate --stacktrace -Psource=S2Drd065.gnm1.R888
+./gradlew integrate --stacktrace -Psource=CDCFrontier.gnm3.QT0P
+./gradlew integrate --stacktrace -Psource=Besev079.gnm1.2FZC

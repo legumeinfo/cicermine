@@ -1,7 +1,5 @@
 #!/bin/sh
-rm -f *.log
 
-## echo a big marker so we can see when this run started in the scroll
 echo ""
 echo "#######################################################################################"
 echo "#######################################################################################"
@@ -23,16 +21,14 @@ echo ""
 
 ## LIS
 # ./gradlew postprocess -Pprocess=lis-populate-gene-protein-collections
-# ./gradlew postprocess -Pprocess=lis-populate-qtl-gene-collections
 # ./gradlew postprocess -Pprocess=lis-populate-publications
-# ./gradlew postprocess -Pprocess=lis-populate-protein-pathway-collections
 
 ## VIEWS AND INDEXES
 # ./gradlew postprocess -Pprocess=create-location-overlap-index
-# ./gradlew postprocess -Pprocess=create-overlap-view
-# ./gradlew postprocess -Pprocess=create-attribute-indexes
+## ## this is not used ## ./gradlew postprocess -Pprocess=create-overlap-view
 
-## DO THESE AFTER UPDATES
+## DO THESE AFTER ALL UPDATES
+./gradlew postprocess -Pprocess=create-attribute-indexes
 ./gradlew postprocess -Pprocess=summarise-objectstore
 ./gradlew postprocess -Pprocess=create-autocomplete-index
 ./gradlew postprocess -Pprocess=create-search-index

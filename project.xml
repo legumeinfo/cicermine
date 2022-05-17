@@ -4,384 +4,85 @@
   <property name="intermine.properties.file" value="cicermine.properties"/>
   <sources>
 
-    <!-- ############### -->
-    <!-- Cicer arietinum -->
-    <!-- ############### -->
-
-    <!-- about_this_collection -->
-    <!-- ├── description_Cicer_arietinum.yml -->
-    <!-- └── strains_Cicer_arietinum.yml -->
-    <source name="cicar-about" type="lis-about" dump="true">
-      <property name="dataSetName" value="Cicer arietinum organism and strain information"/>
-      <property name="dataSetUrl" value="https://legumeinfo.org/data/v2/Cicer/arietinum/about_this_collection/"/>
+    <!-- /data/v2/Cicer/arietinum/about_this_collection/ -->
+    <source name="cicar-description" type="lis-description" dump="true">
+      <property name="dataSetName" value="Cicer/arietinum/about_this_collection"/>
+      <property name="dataSetUrl" value="https://data.legumeinfo.org/Cicer/arietinum/about_this_collection/"/>
       <property name="dataSetDescription" value="Cicer arietinum organism and strain information."/>
       <property name="src.data.dir" location="/data/v2/Cicer/arietinum/about_this_collection"/>
     </source>
-
-    <!-- genomes -->
-    <!-- ├── CDCFrontier.gnm3.QT0P -->
-    <!-- │   ├── cicar.CDCFrontier.gnm3.QT0P.genome_main.fna -->
-    <!-- │   └── cicar.CDCFrontier.gnm3.QT0P.genome_main.fna.fai -->
-    <source name="CDCFrontier.gnm3.QT0P.genome_main" type="lis-fasta" dump="true">
-      <property name="lis-fasta.dataSetTitle" value="CDCFrontier.gnm3.QT0P"/>
-      <property name="lis-fasta.dataSetDescription" value="Genomic FASTA file for Cicer arietinum CDCFrontier v3"/>
-      <property name="lis-fasta.dataSetVersion" value="v3"/>
-      <property name="lis-fasta.dataSetUrl" value="https://legumeinfo.org/data/v2/Cicer/arietinum/genomes/CDCFrontier.gnm3.QT0P/"/>
-      <property name="lis-fasta.taxonId" value="3827"/>
-      <property name="lis-fasta.strainIdentifier" value="CDCFrontier"/>
-      <property name="lis-fasta.sequenceType" value="dna"/>
-      <property name="lis-fasta.className" value="org.intermine.model.bio.Chromosome"/>
-      <property name="lis-fasta.classAttribute" value="primaryIdentifier"/>
-      <property name="lis-fasta.licence" value="ODC Public Domain Dedication and Licence (PDDL)"/>
-      <property name="lis-fasta.includes" value="cicar.CDCFrontier.gnm3.QT0P.genome_main.fna"/>
-      <property name="src.data.dir" location="/data/v2/Cicer/arietinum/genomes/CDCFrontier.gnm3.QT0P"/>
-    </source>
-
-    <!-- annotations -->
-    <!-- ├── CDCFrontier.gnm3.ann1.NPD7 -->
-    <!-- │   ├── cicar.CDCFrontier.gnm3.ann1.NPD7.cds.fna -->
-    <!-- │   ├── cicar.CDCFrontier.gnm3.ann1.NPD7.gene_models_main.gff3 -->
-    <!-- │   ├── cicar.CDCFrontier.gnm3.ann1.NPD7.protein.faa -->
-    <!-- │   └── cicar.CDCFrontier.gnm3.ann1.NPD7.transcript.fna -->
-    <source name="CDCFrontier.gnm3.ann1.NPD7.cds.fna" type="lis-fasta" dump="true">
-      <property name="lis-fasta.dataSourceName" value="LIS Datastore"/>
-      <property name="lis-fasta.dataSourceUrl" value="https://legumeinfo.org/data/v2/"/>
-      <property name="lis-fasta.dataSourceDescription" value="LIS Datastore"/>
-      <property name="lis-fasta.dataSetTitle" value="CDCFrontier.gnm3.ann1.NPD7"/>
-      <property name="lis-fasta.dataSetUrl" value="https://legumeinfo.org/data/v2/Cicer/arietinum/annotations/CDCFrontier.gnm3.ann1.NPD7"/>
-      <property name="lis-fasta.dataSetDescription" value="Annotation for CDCFrontier.gnm3.ann1"/>
-      <property name="lis-fasta.dataSetVersion" value="gnm3.ann1"/>
-      <property name="lis-fasta.taxonId" value="3827"/>
-      <property name="lis-fasta.strainIdentifier" value="CDCFrontier"/>
-      <property name="lis-fasta.sequenceType" value="dna"/>
-      <property name="lis-fasta.className" value="org.intermine.model.bio.CDS"/>
-      <property name="lis-fasta.classAttribute" value="primaryIdentifier"/>
-      <property name="lis-fasta.licence" value="ODC Public Domain Dedication and Licence (PDDL)"/>
-      <property name="lis-fasta.includes" value="cicar.CDCFrontier.gnm3.ann1.NPD7.cds.fna"/>
-      <property name="src.data.dir" location="/data/v2/Cicer/arietinum/annotations/CDCFrontier.gnm3.ann1.NPD7"/>
-    </source>
-    <source name="CDCFrontier.gnm3.ann1.NPD7.gene_models_main" type="lis-gff" dump="true"> 
-      <property name="gff3.seqClsName" value="Chromosome"/>
-      <property name="gff3.dataSourceName" value="LIS Datastore"/>
-      <property name="gff3.dataSourceUrl" value="https://legumeinfo.org/data/v2/"/>
-      <property name="gff3.dataSourceDescription" value="LIS Datastore"/>
-      <property name="gff3.dataSetTitle" value="CDCFrontier.gnm1.ann1.nRhs"/>
-      <property name="gff3.dataSetUrl" value="https://legumeinfo.org/data/v2/Cicer/arietinum/annotations/CDCFrontier.gnm3.ann1.NPD7"/>
-      <property name="gff3.dataSetDescription" value="Annotation for CDCFrontier.gnm3.ann1"/>
-      <property name="gff3.dataSetVersion" value="gnm1.ann1"/>
-      <property name="gff3.licence" value="ODC Public Domain Dedication and Licence (PDDL)"/>
-      <property name="gff3.taxonId" value="3827"/>
-      <property name="gff3.strainIdentifier" value="CDCFrontier"/>
-      <property name="src.data.dir" location="/data/v2/Cicer/arietinum/annotations/CDCFrontier.gnm3.ann1.NPD7"/>
-    </source>
-    <source name="CDCFrontier.gnm3.ann1.NPD7.protein" type="lis-fasta" dump="true">
-      <property name="lis-fasta.dataSourceName" value="LIS Datastore"/>
-      <property name="lis-fasta.dataSourceUrl" value="https://legumeinfo.org/data/v2/"/>
-      <property name="lis-fasta.dataSourceDescription" value="LIS Datastore"/>
-      <property name="lis-fasta.dataSetTitle" value="CDCFrontier.gnm3.ann1.NPD7"/>
-      <property name="lis-fasta.dataSetUrl" value="https://legumeinfo.org/data/v2/Cicer/arietinum/annotations/CDCFrontier.gnm3.ann1.NPD7"/>
-      <property name="lis-fasta.dataSetDescription" value="Annotation for CDCFrontier.gnm3.ann1"/>
-      <property name="lis-fasta.dataSetVersion" value="gnm3.ann1"/>
-      <property name="lis-fasta.taxonId" value="3827"/>
-      <property name="lis-fasta.strainIdentifier" value="CDCFrontier"/>
-      <property name="lis-fasta.sequenceType" value="protein"/>
-      <property name="lis-fasta.className" value="org.intermine.model.bio.Protein"/>
-      <property name="lis-fasta.classAttribute" value="primaryIdentifier"/>
-      <property name="lis-fasta.licence" value="ODC Public Domain Dedication and Licence (PDDL)"/>
-      <property name="lis-fasta.includes" value="cicar.CDCFrontier.gnm3.ann1.NPD7.protein.faa"/>
-      <property name="lis-fasta.loadHeaderDescriptions" value="true"/>
-      <property name="src.data.dir" location="/data/v2/Cicer/arietinum/annotations/CDCFrontier.gnm3.ann1.NPD7"/>
-    </source>
-    <source name="CDCFrontier.gnm3.ann1.NPD7.transcript.fna" type="lis-fasta" dump="true">
-      <property name="lis-fasta.dataSourceName" value="LIS Datastore"/>
-      <property name="lis-fasta.dataSourceUrl" value="https://legumeinfo.org/data/v2/"/>
-      <property name="lis-fasta.dataSourceDescription" value="LIS Datastore"/>
-      <property name="lis-fasta.dataSetTitle" value="CDCFrontier.gnm3.ann1.NPD7"/>
-      <property name="lis-fasta.dataSetUrl" value="https://legumeinfo.org/data/v2/Cicer/arietinum/annotations/CDCFrontier.gnm3.ann1.NPD7"/>
-      <property name="lis-fasta.dataSetDescription" value="Annotation for CDCFrontier.gnm3.ann1"/>
-      <property name="lis-fasta.dataSetVersion" value="gnm3.ann1"/>
-      <property name="lis-fasta.taxonId" value="3827"/>
-      <property name="lis-fasta.strainIdentifier" value="CDCFrontier"/>
-      <property name="lis-fasta.sequenceType" value="dna"/>
-      <property name="lis-fasta.className" value="org.intermine.model.bio.MRNA"/>
-      <property name="lis-fasta.classAttribute" value="primaryIdentifier"/>
-      <property name="lis-fasta.licence" value="ODC Public Domain Dedication and Licence (PDDL)"/>
-      <property name="lis-fasta.includes" value="cicar.CDCFrontier.gnm3.ann1.NPD7.transcript.fna"/>
-      <property name="src.data.dir" location="/data/v2/Cicer/arietinum/annotations/CDCFrontier.gnm3.ann1.NPD7"/>
-    </source>
-    <source name="CDCFrontier.gnm3.ann1.NPD7.legfed_v1_0.gfa" type="lis-gfa" dump="true">
-      <property name="dataSetUrl" value="https://legumeinfo.org/data/v2/Cicer/arietinum/annotations/CDCFrontier.gnm3.ann1.NPD7"/>
-      <property name="dataSetDescription" value="Annotation for CDCFrontier.gnm3.ann1"/>
-      <property name="dataSetName" value="CDCFrontier.gnm3.ann1.NPD7"/>
-      <property name="src.data.dir" location="/data/v2/Cicer/arietinum/annotations/CDCFrontier.gnm3.ann1.NPD7"/>
-    </source>
-    <source name="CDCFrontier.gnm3.ann1.NPD7.legfed_v1_0.pathway" type="lis-pathway" dump="true">
-      <property name="dataSetUrl" value="https://legumeinfo.org/data/v2/Cicer/arietinum/annotations/CDCFrontier.gnm3.ann1.NPD7"/>
-      <property name="dataSetDescription" value="Annotation for CDCFrontier.gnm3.ann1"/>
-      <property name="dataSetName" value="CDCFrontier.gnm3.ann1.NPD7"/>
-      <property name="src.data.dir" location="/data/v2/Cicer/arietinum/annotations/CDCFrontier.gnm3.ann1.NPD7"/>
-    </source>
-    
-    <!-- ################### -->
-    <!-- Cicer echinospermum -->
-    <!-- ################### -->
-
-    <!-- about_this_collection -->
-    <!-- ├── description_Cicer_echinospermum.yml -->
-    <!-- └── strains_Cicer_echinospermum.yml -->
-    <source name="cicec-about" type="lis-about" dump="true">
-      <property name="dataSetName" value="Cicer echinospermum organism and strain information"/>
-      <property name="dataSetUrl" value="https://legumeinfo.org/data/v2/Cicer/echinospermum/about_this_collection/"/>
+    <!-- /data/v2/Cicer/echinospermum/about_this_collection/ -->
+    <source name="cicec-description" type="lis-description" dump="true">
+      <property name="dataSetName" value="Cicer/echinospermum/about_this_collection"/>
+      <property name="dataSetUrl" value="https://data.legumeinfo.org/Cicer/echinospermum/about_this_collection/"/>
       <property name="dataSetDescription" value="Cicer echinospermum organism and strain information."/>
       <property name="src.data.dir" location="/data/v2/Cicer/echinospermum/about_this_collection"/>
     </source>
-    
-    <!-- genomes -->
-    <!-- └── S2Drd065.gnm1.R888 -->
-    <!--     └── cicec.S2Drd065.gnm1.R888.genome_main.fna -->
-    <source name="S2Drd065.gnm1.R888.genome_main" type="lis-fasta" dump="true">
-      <property name="lis-fasta.dataSetTitle" value="S2Drd065.gnm1.R888"/>
-      <property name="lis-fasta.dataSetDescription" value="Genomic FASTA file for Cicer echinospermum S2Drd065 v3"/>
-      <property name="lis-fasta.dataSetVersion" value="v3"/>
-      <property name="lis-fasta.dataSetUrl" value="https://legumeinfo.org/data/v2/Cicer/echinospermum/genomes/S2Drd065.gnm1.R888/"/>
-      <property name="lis-fasta.taxonId" value="90897"/>
-      <property name="lis-fasta.strainIdentifier" value="S2Drd065"/>
-      <property name="lis-fasta.sequenceType" value="dna"/>
-      <property name="lis-fasta.className" value="org.intermine.model.bio.Chromosome"/>
-      <property name="lis-fasta.classAttribute" value="primaryIdentifier"/>
-      <property name="lis-fasta.licence" value="ODC Public Domain Dedication and Licence (PDDL)"/>
-      <property name="lis-fasta.includes" value="cicec.S2Drd065.gnm1.R888.genome_main.fna"/>
-      <property name="src.data.dir" location="/data/v2/Cicer/echinospermum/genomes/S2Drd065.gnm1.R888"/>
-    </source>
-
-    <!-- annotations -->
-    <!-- └── S2Drd065.gnm1.ann1.YZ9H -->
-    <!--     ├── cicec.S2Drd065.gnm1.ann1.YZ9H.cds.fna -->
-    <!--     ├── cicec.S2Drd065.gnm1.ann1.YZ9H.gene_models_main.gff3 -->
-    <!--     ├── cicec.S2Drd065.gnm1.ann1.YZ9H.protein.faa -->
-    <!--     └── cicec.S2Drd065.gnm1.ann1.YZ9H.transcript.fna -->
-    <source name="S2Drd065.gnm1.ann1.YZ9H.cds.fna" type="lis-fasta" dump="true">
-      <property name="lis-fasta.dataSourceName" value="LIS Datastore"/>
-      <property name="lis-fasta.dataSourceUrl" value="https://legumeinfo.org/data/v2/"/>
-      <property name="lis-fasta.dataSourceDescription" value="LIS Datastore"/>
-      <property name="lis-fasta.dataSetTitle" value="S2Drd065.gnm1.ann1.YZ9H"/>
-      <property name="lis-fasta.dataSetUrl" value="https://legumeinfo.org/data/v2/Cicer/echinospermum/annotations/S2Drd065.gnm1.ann1.YZ9H"/>
-      <property name="lis-fasta.dataSetDescription" value="Annotation for S2Drd065.gnm1.ann1"/>
-      <property name="lis-fasta.dataSetVersion" value="gnm1.ann1"/>
-      <property name="lis-fasta.taxonId" value="90897"/>
-      <property name="lis-fasta.strainIdentifier" value="S2Drd065"/>
-      <property name="lis-fasta.sequenceType" value="dna"/>
-      <property name="lis-fasta.className" value="org.intermine.model.bio.CDS"/>
-      <property name="lis-fasta.classAttribute" value="primaryIdentifier"/>
-      <property name="lis-fasta.licence" value="ODC Public Domain Dedication and Licence (PDDL)"/>
-      <property name="lis-fasta.includes" value="cicec.S2Drd065.gnm1.ann1.YZ9H.cds.fna"/>
-      <property name="src.data.dir" location="/data/v2/Cicer/echinospermum/annotations/S2Drd065.gnm1.ann1.YZ9H"/>
-    </source>
-    <source name="S2Drd065.gnm1.ann1.YZ9H.gene_models_main" type="lis-gff" dump="true"> 
-      <property name="gff3.seqClsName" value="Chromosome"/>
-      <property name="gff3.dataSourceName" value="LIS Datastore"/>
-      <property name="gff3.dataSourceUrl" value="https://legumeinfo.org/data/v2/"/>
-      <property name="gff3.dataSourceDescription" value="LIS Datastore"/>
-      <property name="gff3.dataSetTitle" value="S2Drd065.gnm1.ann1.nRhs"/>
-      <property name="gff3.dataSetUrl" value="https://legumeinfo.org/data/v2/Cicer/echinospermum/annotations/S2Drd065.gnm1.ann1.YZ9H"/>
-      <property name="gff3.dataSetDescription" value="Annotation for S2Drd065.gnm1.ann1"/>
-      <property name="gff3.dataSetVersion" value="gnm1.ann1"/>
-      <property name="gff3.licence" value="ODC Public Domain Dedication and Licence (PDDL)"/>
-      <property name="gff3.taxonId" value="90897"/>
-      <property name="gff3.strainIdentifier" value="S2Drd065"/>
-      <property name="src.data.dir" location="/data/v2/Cicer/echinospermum/annotations/S2Drd065.gnm1.ann1.YZ9H"/>
-    </source>
-    <source name="S2Drd065.gnm1.ann1.YZ9H.protein" type="lis-fasta" dump="true">
-      <property name="lis-fasta.dataSourceName" value="LIS Datastore"/>
-      <property name="lis-fasta.dataSourceUrl" value="https://legumeinfo.org/data/v2/"/>
-      <property name="lis-fasta.dataSourceDescription" value="LIS Datastore"/>
-      <property name="lis-fasta.dataSetTitle" value="S2Drd065.gnm1.ann1.YZ9H"/>
-      <property name="lis-fasta.dataSetUrl" value="https://legumeinfo.org/data/v2/Cicer/echinospermum/annotations/S2Drd065.gnm1.ann1.YZ9H"/>
-      <property name="lis-fasta.dataSetDescription" value="Annotation for S2Drd065.gnm1.ann1"/>
-      <property name="lis-fasta.dataSetVersion" value="gnm1.ann1"/>
-      <property name="lis-fasta.taxonId" value="90897"/>
-      <property name="lis-fasta.strainIdentifier" value="S2Drd065"/>
-      <property name="lis-fasta.sequenceType" value="protein"/>
-      <property name="lis-fasta.className" value="org.intermine.model.bio.Protein"/>
-      <property name="lis-fasta.classAttribute" value="primaryIdentifier"/>
-      <property name="lis-fasta.licence" value="ODC Public Domain Dedication and Licence (PDDL)"/>
-      <property name="lis-fasta.includes" value="cicec.S2Drd065.gnm1.ann1.YZ9H.protein.faa"/>
-      <property name="lis-fasta.loadHeaderDescriptions" value="true"/>
-      <property name="src.data.dir" location="/data/v2/Cicer/echinospermum/annotations/S2Drd065.gnm1.ann1.YZ9H"/>
-    </source>
-    <source name="S2Drd065.gnm1.ann1.YZ9H.transcript.fna" type="lis-fasta" dump="true">
-      <property name="lis-fasta.dataSourceName" value="LIS Datastore"/>
-      <property name="lis-fasta.dataSourceUrl" value="https://legumeinfo.org/data/v2/"/>
-      <property name="lis-fasta.dataSourceDescription" value="LIS Datastore"/>
-      <property name="lis-fasta.dataSetTitle" value="S2Drd065.gnm1.ann1.YZ9H"/>
-      <property name="lis-fasta.dataSetUrl" value="https://legumeinfo.org/data/v2/Cicer/echinospermum/annotations/S2Drd065.gnm1.ann1.YZ9H"/>
-      <property name="lis-fasta.dataSetDescription" value="Annotation for S2Drd065.gnm1.ann1"/>
-      <property name="lis-fasta.dataSetVersion" value="gnm1.ann1"/>
-      <property name="lis-fasta.taxonId" value="90897"/>
-      <property name="lis-fasta.strainIdentifier" value="S2Drd065"/>
-      <property name="lis-fasta.sequenceType" value="dna"/>
-      <property name="lis-fasta.className" value="org.intermine.model.bio.MRNA"/>
-      <property name="lis-fasta.classAttribute" value="primaryIdentifier"/>
-      <property name="lis-fasta.licence" value="ODC Public Domain Dedication and Licence (PDDL)"/>
-      <property name="lis-fasta.includes" value="cicec.S2Drd065.gnm1.ann1.YZ9H.transcript.fna"/>
-      <property name="src.data.dir" location="/data/v2/Cicer/echinospermum/annotations/S2Drd065.gnm1.ann1.YZ9H"/>
-    </source>
-    <source name="S2Drd065.gnm1.ann1.YZ9H.legfed_v1_0.gfa" type="lis-gfa" dump="true">
-      <property name="dataSetUrl" value="https://legumeinfo.org/data/v2/Cicer/echinospermum/annotations/S2Drd065.gnm1.ann1.YZ9H"/>
-      <property name="dataSetDescription" value="Annotation for S2Drd065.gnm1.ann1"/>
-      <property name="dataSetName" value="S2Drd065.gnm1.ann1.YZ9H"/>
-      <property name="src.data.dir" location="/data/v2/Cicer/echinospermum/annotations/S2Drd065.gnm1.ann1.YZ9H"/>
-    </source>
-    <source name="S2Drd065.gnm1.ann1.YZ9H.legfed_v1_0.pathway" type="lis-pathway" dump="true">
-      <property name="dataSetUrl" value="https://legumeinfo.org/data/v2/Cicer/echinospermum/annotations/S2Drd065.gnm1.ann1.YZ9H"/>
-      <property name="dataSetDescription" value="Annotation for S2Drd065.gnm1.ann1"/>
-      <property name="dataSetName" value="S2Drd065.gnm1.ann1.YZ9H"/>
-      <property name="src.data.dir" location="/data/v2/Cicer/echinospermum/annotations/S2Drd065.gnm1.ann1.YZ9H"/>
-    </source>
-    
-
-    
-    <!-- ################# -->
-    <!-- Cicer reticulatum -->
-    <!-- ################# -->
-
-    <!-- about_this_collection -->
-    <!-- ├── description_Cicer_reticulatum.yml -->
-    <!-- └── strains_Cicer_reticulatum.yml -->
-    <source name="cicre-about" type="lis-about" dump="true">
-      <property name="dataSetName" value="Cicer reticulatum organism and strain information"/>
-      <property name="dataSetUrl" value="https://legumeinfo.org/data/v2/Cicer/reticulatum/about_this_collection/"/>
+    <!-- /data/v2/Cicer/reticulatum/about_this_collection/ -->
+    <source name="cicre-description" type="lis-description" dump="true">
+      <property name="dataSetName" value="Cicer/reticulatum/about_this_collection"/>
+      <property name="dataSetUrl" value="https://data.legumeinfo.org/Cicer/reticulatum/about_this_collection/"/>
       <property name="dataSetDescription" value="Cicer reticulatum organism and strain information."/>
       <property name="src.data.dir" location="/data/v2/Cicer/reticulatum/about_this_collection"/>
     </source>
 
-    <!-- genomes -->
-    <!-- └── Besev079.gnm1.2FZC -->
-    <!--     └── cicre.Besev079.gnm1.2FZC.genome_main.fna -->
-    <source name="Besev079.gnm1.2FZC.genome_main" type="lis-fasta" dump="true">
-      <property name="lis-fasta.dataSetTitle" value="Besev079.gnm1.2FZC"/>
-      <property name="lis-fasta.dataSetDescription" value="Genomic FASTA file for Cicer reticulatum Besev079"/>
-      <property name="lis-fasta.dataSetVersion" value="v3"/>
-      <property name="lis-fasta.dataSetUrl" value="https://legumeinfo.org/data/v2/Cicer/reticulatum/genomes/Besev079.gnm1.2FZC/"/>
-      <property name="lis-fasta.taxonId" value="90898"/>
-      <property name="lis-fasta.strainIdentifier" value="Besev079"/>
-      <property name="lis-fasta.sequenceType" value="dna"/>
+    <!-- /data/v2/Cicer/arietinum/genomes/CDCFrontier.gnm3.QT0P/ -->
+    <source name="CDCFrontier.gnm3.QT0P" type="lis-fasta" dump="true">
+      <property name="lis-fasta.dataSetUrl" value="https://data.legumeinfo.org/Cicer/arietinum/genomes/CDCFrontier.gnm3.QT0P/"/>
       <property name="lis-fasta.className" value="org.intermine.model.bio.Chromosome"/>
-      <property name="lis-fasta.classAttribute" value="primaryIdentifier"/>
-      <property name="lis-fasta.licence" value="ODC Public Domain Dedication and Licence (PDDL)"/>
-      <property name="lis-fasta.includes" value="cicre.Besev079.gnm1.2FZC.genome_main.fna"/>
-      <property name="src.data.dir" location="/data/v2/Cicer/reticulatum/genomes/Besev079.gnm1.2FZC"/>
+      <property name="lis-fasta.includes" value="README.CDCFrontier.gnm3.QT0P.yml,cicar.CDCFrontier.gnm3.QT0P.genome_main.fna"/>
+      <property name="src.data.dir" location="/data/v2/Cicer/arietinum/genomes/CDCFrontier.gnm3.QT0P"/>
+    </source>
+    <!-- /data/v2/Cicer/arietinum/annotations/CDCFrontier.gnm3.ann1.NPD7/ -->
+    <source name="CDCFrontier.gnm3.ann1.NPD7" type="lis-annotation" dump="true">
+      <property name="dataSetUrl" value="https://data.legumeinfo.org/Cicer/arietinum/annotations/CDCFrontier.gnm3.ann1.NPD7"/>
+      <property name="src.data.dir" location="/data/v2/Cicer/arietinum/annotations/CDCFrontier.gnm3.ann1.NPD7"/>
     </source>
     
-    <!-- annotations -->
+    <!-- /data/v2/Cicer/echinospermum/genomes/S2Drd065.gnm1.R888/ -->
+    <source name="S2Drd065.gnm1.R888" type="lis-fasta" dump="true">
+      <property name="lis-fasta.dataSetUrl" value="https://data.legumeinfo.org/Cicer/echinospermum/genomes/S2Drd065.gnm1.R888/"/>
+      <property name="lis-fasta.className" value="org.intermine.model.bio.Chromosome"/>
+      <property name="lis-fasta.includes" value="README.S2Drd065.gnm1.R888.yml,cicec.S2Drd065.gnm1.R888.genome_main.fna"/>
+      <property name="src.data.dir" location="/data/v2/Cicer/echinospermum/genomes/S2Drd065.gnm1.R888"/>
+    </source>
+
+    <!-- /data/v2/Cicer/echinospermum/annotations/S2Drd065.gnm1.ann1.YZ9H/ -->
+    <source name="S2Drd065.gnm1.ann1.YZ9H" type="lis-annotation" dump="true">
+      <property name="dataSetUrl" value="https://data.legumeinfo.org/Cicer/echinospermum/annotations/S2Drd065.gnm1.ann1.YZ9H"/>
+      <property name="src.data.dir" location="/data/v2/Cicer/echinospermum/annotations/S2Drd065.gnm1.ann1.YZ9H"/>
+    </source>
+    
+    <!-- /data/v2/Cicer/reticulatum/genomes/ -->
+    <!-- └── Besev079.gnm1.2FZC -->
+    <source name="Besev079.gnm1.2FZC" type="lis-fasta" dump="true">
+      <property name="lis-fasta.dataSetUrl" value="https://data.legumeinfo.org/Cicer/reticulatum/genomes/Besev079.gnm1.2FZC/"/>
+      <property name="lis-fasta.className" value="org.intermine.model.bio.Chromosome"/>
+      <property name="lis-fasta.includes" value="README.Besev079.gnm1.2FZC.yml,cicre.Besev079.gnm1.2FZC.genome_main.fna"/>
+      <property name="src.data.dir" location="/data/v2/Cicer/reticulatum/genomes/Besev079.gnm1.2FZC"/>
+    </source>
+    <!-- /data/v2/Cicer/reticulatum/annotations/ -->
     <!-- └── Besev079.gnm1.ann1.F01Z -->
-    <!--     ├── cicre.Besev079.gnm1.ann1.F01Z.cds.fna -->
-    <!--     ├── cicre.Besev079.gnm1.ann1.F01Z.gene_models_main.gff3 -->
-    <!--     ├── cicre.Besev079.gnm1.ann1.F01Z.protein.faa -->
-    <!--     └── cicre.Besev079.gnm1.ann1.F01Z.transcript.fna -->
-    <source name="Besev079.gnm1.ann1.F01Z.cds.fna" type="lis-fasta" dump="true">
-      <property name="lis-fasta.dataSourceName" value="LIS Datastore"/>
-      <property name="lis-fasta.dataSourceUrl" value="https://legumeinfo.org/data/v2/"/>
-      <property name="lis-fasta.dataSourceDescription" value="LIS Datastore"/>
-      <property name="lis-fasta.dataSetTitle" value="Besev079.gnm1.ann1.F01Z"/>
-      <property name="lis-fasta.dataSetUrl" value="https://legumeinfo.org/data/v2/Cicer/reticulatum/annotations/Besev079.gnm1.ann1.F01Z/"/>
-      <property name="lis-fasta.dataSetDescription" value="Annotation for Besev079.gnm1.ann1"/>
-      <property name="lis-fasta.dataSetVersion" value="gnm1.ann1"/>
-      <property name="lis-fasta.taxonId" value="90898"/>
-      <property name="lis-fasta.strainIdentifier" value="Besev079"/>
-      <property name="lis-fasta.sequenceType" value="dna"/>
-      <property name="lis-fasta.className" value="org.intermine.model.bio.CDS"/>
-      <property name="lis-fasta.classAttribute" value="primaryIdentifier"/>
-      <property name="lis-fasta.licence" value="ODC Public Domain Dedication and Licence (PDDL)"/>
-      <property name="lis-fasta.includes" value="cicre.Besev079.gnm1.ann1.F01Z.cds.fna"/>
+    <source name="Besev079.gnm1.ann1.F01Z" type="lis-annotation" dump="true">
+      <property name="dataSetUrl" value="https://data.legumeinfo.org/Cicer/reticulatum/annotations/Besev079.gnm1.ann1.F01Z/"/>
       <property name="src.data.dir" location="/data/v2/Cicer/reticulatum/annotations/Besev079.gnm1.ann1.F01Z"/>
     </source>
-    <source name="Besev079.gnm1.ann1.F01Z.gene_models_main" type="lis-gff" dump="true"> 
-      <property name="gff3.seqClsName" value="Chromosome"/>
-      <property name="gff3.dataSourceName" value="LIS Datastore"/>
-      <property name="gff3.dataSourceUrl" value="https://legumeinfo.org/data/v2/"/>
-      <property name="gff3.dataSourceDescription" value="LIS Datastore"/>
-      <property name="gff3.dataSetTitle" value="Besev079.gnm1.ann1.nRhs"/>
-      <property name="gff3.dataSetUrl" value="https://legumeinfo.org/data/v2/Cicer/reticulatum/annotations/Besev079.gnm1.ann1.F01Z/"/>
-      <property name="gff3.dataSetDescription" value="Annotation for Besev079.gnm1.ann1"/>
-      <property name="gff3.dataSetVersion" value="gnm1.ann1"/>
-      <property name="gff3.licence" value="ODC Public Domain Dedication and Licence (PDDL)"/>
-      <property name="gff3.taxonId" value="90898"/>
-      <property name="gff3.strainIdentifier" value="Besev079"/>
-      <property name="src.data.dir" location="/data/v2/Cicer/reticulatum/annotations/Besev079.gnm1.ann1.F01Z"/>
-    </source>
-    <source name="Besev079.gnm1.ann1.F01Z.protein" type="lis-fasta" dump="true">
-      <property name="lis-fasta.dataSourceName" value="LIS Datastore"/>
-      <property name="lis-fasta.dataSourceUrl" value="https://legumeinfo.org/data/v2/"/>
-      <property name="lis-fasta.dataSourceDescription" value="LIS Datastore"/>
-      <property name="lis-fasta.dataSetTitle" value="Besev079.gnm1.ann1.F01Z"/>
-      <property name="lis-fasta.dataSetUrl" value="https://legumeinfo.org/data/v2/Cicer/reticulatum/annotations/Besev079.gnm1.ann1.F01Z/"/>
-      <property name="lis-fasta.dataSetDescription" value="Annotation for Besev079.gnm1.ann1"/>
-      <property name="lis-fasta.dataSetVersion" value="gnm1.ann1"/>
-      <property name="lis-fasta.taxonId" value="90898"/>
-      <property name="lis-fasta.strainIdentifier" value="Besev079"/>
-      <property name="lis-fasta.sequenceType" value="protein"/>
-      <property name="lis-fasta.className" value="org.intermine.model.bio.Protein"/>
-      <property name="lis-fasta.classAttribute" value="primaryIdentifier"/>
-      <property name="lis-fasta.licence" value="ODC Public Domain Dedication and Licence (PDDL)"/>
-      <property name="lis-fasta.includes" value="cicre.Besev079.gnm1.ann1.F01Z.protein.faa"/>
-      <property name="lis-fasta.loadHeaderDescriptions" value="true"/>
-      <property name="src.data.dir" location="/data/v2/Cicer/reticulatum/annotations/Besev079.gnm1.ann1.F01Z"/>
-    </source>
-    <source name="Besev079.gnm1.ann1.F01Z.transcript.fna" type="lis-fasta" dump="true">
-      <property name="lis-fasta.dataSourceName" value="LIS Datastore"/>
-      <property name="lis-fasta.dataSourceUrl" value="https://legumeinfo.org/data/v2/"/>
-      <property name="lis-fasta.dataSourceDescription" value="LIS Datastore"/>
-      <property name="lis-fasta.dataSetTitle" value="Besev079.gnm1.ann1.F01Z"/>
-      <property name="lis-fasta.dataSetUrl" value="https://legumeinfo.org/data/v2/Cicer/reticulatum/annotations/Besev079.gnm1.ann1.F01Z/"/>
-      <property name="lis-fasta.dataSetDescription" value="Annotation for Besev079.gnm1.ann1"/>
-      <property name="lis-fasta.dataSetVersion" value="gnm1.ann1"/>
-      <property name="lis-fasta.taxonId" value="90898"/>
-      <property name="lis-fasta.strainIdentifier" value="Besev079"/>
-      <property name="lis-fasta.sequenceType" value="dna"/>
-      <property name="lis-fasta.className" value="org.intermine.model.bio.MRNA"/>
-      <property name="lis-fasta.classAttribute" value="primaryIdentifier"/>
-      <property name="lis-fasta.licence" value="ODC Public Domain Dedication and Licence (PDDL)"/>
-      <property name="lis-fasta.includes" value="cicre.Besev079.gnm1.ann1.F01Z.transcript.fna"/>
-      <property name="src.data.dir" location="/data/v2/Cicer/reticulatum/annotations/Besev079.gnm1.ann1.F01Z"/>
-    </source>
-    <source name="Besev079.gnm1.ann1.F01Z.legfed_v1_0.gfa" type="lis-gfa" dump="true">
-      <property name="dataSetUrl" value="https://legumeinfo.org/data/v2/Cicer/reticulatum/annotations/Besev079.gnm1.ann1.F01Z/"/>
-      <property name="dataSetDescription" value="Annotation for Besev079.gnm1.ann1"/>
-      <property name="dataSetName" value="Besev079.gnm1.ann1.F01Z"/>
-      <property name="src.data.dir" location="/data/v2/Cicer/reticulatum/annotations/Besev079.gnm1.ann1.F01Z"/>
-    </source>
-    <source name="Besev079.gnm1.ann1.F01Z.legfed_v1_0.pathway" type="lis-pathway" dump="true">
-      <property name="dataSetUrl" value="https://legumeinfo.org/data/v2/Cicer/reticulatum/annotations/Besev079.gnm1.ann1.F01Z/"/>
-      <property name="dataSetDescription" value="Annotation for Besev079.gnm1.ann1"/>
-      <property name="dataSetName" value="Besev079.gnm1.ann1.F01Z"/>
-      <property name="src.data.dir" location="/data/v2/Cicer/reticulatum/annotations/Besev079.gnm1.ann1.F01Z"/>
-    </source>
-
-
-    <!-- ############# -->
-    <!-- GENE FAMILIES -->
-    <!-- ############# -->
 
     <!-- LEGUMES/Fabaceae/genefamilies/legume.genefam.fam1.M65K/ -->
     <source name="legume.genefam.fam1.M65K" type="lis-genefamily" dump="true">
-      <property name="dataSetUrl" value="https://legumeinfo.org/data/v2/LEGUMES/Fabaceae/genefamilies/legume.genefam.fam1.M65K/"/>
+      <property name="dataSetName" value="legume.genefam.fam1.M65K"/>
+      <property name="dataSetUrl" value="https://data.legumeinfo.org/LEGUMES/Fabaceae/genefamilies/legume.genefam.fam1.M65K/" />
       <property name="dataSetDescription" value="LIS gene families"/>
-      <property name="desired.organisms" value="aradu araip arahy arath cajca cicar cicec cicre cucsa glyma glyso lotja lupan medtr phalu phavu prupe solly tripr vigan vigra vigun vitvi"/>
       <property name="src.data.dir" location="/data/v2/LEGUMES/Fabaceae/genefamilies/legume.genefam.fam1.M65K"/>
     </source>
 
     <!-- LEGUMES/Fabaceae/genefamilies/legume.genefam.fam1.M65K/legume.genefam.fam1.M65K.trees_ML_rooted/ -->
     <source name="legume.genefam.fam1.M65K.trees_ML_rooted" type="lis-phylotree" dump="true">
-      <property name="dataSetUrl" value="https://legumeinfo.org/data/v2/LEGUMES/Fabaceae/genefamilies/legume.genefam.fam1.M65K/legume.genefam.fam1.M65K.trees_ML_rooted/"/>
+      <property name="dataSetUrl" value="https://data.legumeinfo.org/LEGUMES/Fabaceae/genefamilies/legume.genefam.fam1.M65K/legume.genefam.fam1.M65K.trees_ML_rooted/"/>
       <property name="dataSetDescription" value="LIS gene family phylogenetic trees"/>
       <property name="src.data.dir" location="/data/v2/LEGUMES/Fabaceae/genefamilies/legume.genefam.fam1.M65K/legume.genefam.fam1.M65K.trees_ML_rooted"/>
     </source>
 
-    <!-- ############### -->
-    <!-- ONTOLOGIES ETC. -->
-    <!-- ############### -->
-    
     <!-- INTERPRO -->
     <source name="interpro" type="interpro">
       <property name="data.source.name" value="InterPro"/>
@@ -455,9 +156,6 @@
     <post-process name="create-gene-flanking-features"/>
 
     <!-- LIS -->
-    <!-- NOTE: run direct-updates for CDS/transcript/gene/protein references -->
-    <post-process name="lis-populate-gene-protein-collections"/>
-    <post-process name="lis-populate-protein-pathway-collections"/>
     <post-process name="lis-populate-publications"/>
 
     <!-- VIEWS AND INDEXES -->
@@ -470,4 +168,3 @@
   </post-processing>
 
 </project>
-

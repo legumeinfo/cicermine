@@ -1,0 +1,13 @@
+#!/bin/sh
+NC='\033[0m'
+LP='\033[1;35m'
+
+echo -e "#################################################################"
+echo -e "########################## ${LP}DESCRIPTIONS${NC} #########################"
+echo -e "#################################################################"
+
+## species/strain descriptions
+./gradlew integrate --stacktrace -Psource=cicar-description
+./gradlew integrate --stacktrace -Psource=cicec-description
+./gradlew integrate --stacktrace -Psource=cicre-description
+
