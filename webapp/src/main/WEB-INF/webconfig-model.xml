@@ -230,6 +230,21 @@
     </fields>
   </class>
 
+  <class className="org.intermine.model.bio.ProteinDomain">
+    <headerconfig>
+      <titles>
+        <title mainTitles="primaryIdentifier|name" />
+      </titles>
+    </headerconfig>
+    <fields>
+      <fieldconfig fieldExpr="primaryIdentifier" label="Identifier" />
+      <fieldconfig fieldExpr="name" label="Name" />
+      <fieldconfig fieldExpr="shortName" label="Short name" />
+      <fieldconfig fieldExpr="description" label="Description" />
+      <fieldconfig fieldExpr="type" label="Type" />
+    </fields>
+  </class>
+
   <class className="org.intermine.model.bio.Organism">
     <headerconfig>
       <titles>
