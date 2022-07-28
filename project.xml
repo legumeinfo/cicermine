@@ -30,27 +30,27 @@
     <source name="CDCFrontier.gnm3.QT0P" type="lis-fasta" dump="true">
       <property name="lis-fasta.dataSetUrl" value="https://data.legumeinfo.org/Cicer/arietinum/genomes/CDCFrontier.gnm3.QT0P/"/>
       <property name="lis-fasta.className" value="org.intermine.model.bio.Chromosome"/>
-      <property name="lis-fasta.includes" value="README.CDCFrontier.gnm3.QT0P.yml,cicar.CDCFrontier.gnm3.QT0P.genome_main.fna"/>
-      <property name="src.data.dir" location="/data/v2/Cicer/arietinum/genomes/CDCFrontier.gnm3.QT0P"/>
+      <property name="lis-fasta.includes" value="README.CDCFrontier.gnm3.QT0P.yml,cicar.CDCFrontier.gnm3.QT0P.genome_main.fna.gz"/>
+      <property name="src.data.dir" location="/erdos/legumeinfo/data/v2/Cicer/arietinum/genomes/CDCFrontier.gnm3.QT0P"/>
     </source>
     <!-- /data/v2/Cicer/arietinum/annotations/CDCFrontier.gnm3.ann1.NPD7/ -->
     <source name="CDCFrontier.gnm3.ann1.NPD7" type="lis-annotation" dump="true">
       <property name="dataSetUrl" value="https://data.legumeinfo.org/Cicer/arietinum/annotations/CDCFrontier.gnm3.ann1.NPD7"/>
-      <property name="src.data.dir" location="/data/v2/Cicer/arietinum/annotations/CDCFrontier.gnm3.ann1.NPD7"/>
+      <property name="src.data.dir" location="/erdos/legumeinfo/data/v2/Cicer/arietinum/annotations/CDCFrontier.gnm3.ann1.NPD7"/>
     </source>
     
     <!-- /data/v2/Cicer/echinospermum/genomes/S2Drd065.gnm1.R888/ -->
     <source name="S2Drd065.gnm1.R888" type="lis-fasta" dump="true">
       <property name="lis-fasta.dataSetUrl" value="https://data.legumeinfo.org/Cicer/echinospermum/genomes/S2Drd065.gnm1.R888/"/>
       <property name="lis-fasta.className" value="org.intermine.model.bio.Chromosome"/>
-      <property name="lis-fasta.includes" value="README.S2Drd065.gnm1.R888.yml,cicec.S2Drd065.gnm1.R888.genome_main.fna"/>
-      <property name="src.data.dir" location="/data/v2/Cicer/echinospermum/genomes/S2Drd065.gnm1.R888"/>
+      <property name="lis-fasta.includes" value="README.S2Drd065.gnm1.R888.yml,cicec.S2Drd065.gnm1.R888.genome_main.fna.gz"/>
+      <property name="src.data.dir" location="/erdos/legumeinfo/data/v2/Cicer/echinospermum/genomes/S2Drd065.gnm1.R888"/>
     </source>
 
     <!-- /data/v2/Cicer/echinospermum/annotations/S2Drd065.gnm1.ann1.YZ9H/ -->
     <source name="S2Drd065.gnm1.ann1.YZ9H" type="lis-annotation" dump="true">
       <property name="dataSetUrl" value="https://data.legumeinfo.org/Cicer/echinospermum/annotations/S2Drd065.gnm1.ann1.YZ9H"/>
-      <property name="src.data.dir" location="/data/v2/Cicer/echinospermum/annotations/S2Drd065.gnm1.ann1.YZ9H"/>
+      <property name="src.data.dir" location="/erdos/legumeinfo/data/v2/Cicer/echinospermum/annotations/S2Drd065.gnm1.ann1.YZ9H"/>
     </source>
     
     <!-- /data/v2/Cicer/reticulatum/genomes/ -->
@@ -58,14 +58,46 @@
     <source name="Besev079.gnm1.2FZC" type="lis-fasta" dump="true">
       <property name="lis-fasta.dataSetUrl" value="https://data.legumeinfo.org/Cicer/reticulatum/genomes/Besev079.gnm1.2FZC/"/>
       <property name="lis-fasta.className" value="org.intermine.model.bio.Chromosome"/>
-      <property name="lis-fasta.includes" value="README.Besev079.gnm1.2FZC.yml,cicre.Besev079.gnm1.2FZC.genome_main.fna"/>
-      <property name="src.data.dir" location="/data/v2/Cicer/reticulatum/genomes/Besev079.gnm1.2FZC"/>
+      <property name="lis-fasta.includes" value="README.Besev079.gnm1.2FZC.yml,cicre.Besev079.gnm1.2FZC.genome_main.fna.gz"/>
+      <property name="src.data.dir" location="/erdos/legumeinfo/data/v2/Cicer/reticulatum/genomes/Besev079.gnm1.2FZC"/>
     </source>
     <!-- /data/v2/Cicer/reticulatum/annotations/ -->
     <!-- └── Besev079.gnm1.ann1.F01Z -->
     <source name="Besev079.gnm1.ann1.F01Z" type="lis-annotation" dump="true">
       <property name="dataSetUrl" value="https://data.legumeinfo.org/Cicer/reticulatum/annotations/Besev079.gnm1.ann1.F01Z/"/>
-      <property name="src.data.dir" location="/data/v2/Cicer/reticulatum/annotations/Besev079.gnm1.ann1.F01Z"/>
+      <property name="src.data.dir" location="/erdos/legumeinfo/data/v2/Cicer/reticulatum/annotations/Besev079.gnm1.ann1.F01Z"/>
+    </source>
+
+
+    <!-- /data/v2/Cicer/arietinum/expression/ -->
+    <!-- └── CDCFrontier.gnm3.ann1.expr.CDC_Consul.Perilla-Henao_2018 -->
+    <source name="CDCFrontier.gnm3.ann1.expr.CDC_Consul.Perilla-Henao_2018" type="lis-expression" dump="true">
+      <property name="dataSetUrl" value="https://data.legumeinfo.org/Cicer/arietinum/expression/CDCFrontier.gnm3.ann1.expr.CDC_Consul.Perilla-Henao_2018/"/>
+      <property name="src.data.dir" location="/data/v2/Cicer/arietinum/expression/CDCFrontier.gnm3.ann1.expr.CDC_Consul.Perilla-Henao_2018"/>
+    </source>
+    <!-- /data/v2/Cicer/arietinum/expression/ -->
+    <!-- └── CDCFrontier.gnm3.ann1.expr.Hybrid.Cook_2018 -->
+    <source name="CDCFrontier.gnm3.ann1.expr.Hybrid.Cook_2018" type="lis-expression" dump="true">
+      <property name="dataSetUrl" value="https://data.legumeinfo.org/Cicer/arietinum/expression/CDCFrontier.gnm3.ann1.expr.Hybrid.Cook_2018/"/>
+      <property name="src.data.dir" location="/data/v2/Cicer/arietinum/expression/CDCFrontier.gnm3.ann1.expr.Hybrid.Cook_2018"/>
+    </source>
+    <!-- /data/v2/Cicer/arietinum/expression/ -->
+    <!-- └── CDCFrontier.gnm3.ann1.expr.mixed.Moenga_2018 -->
+    <source name="CDCFrontier.gnm3.ann1.expr.mixed.Moenga_2018" type="lis-expression" dump="true">
+      <property name="dataSetUrl" value="https://data.legumeinfo.org/Cicer/arietinum/expression/CDCFrontier.gnm3.ann1.expr.mixed.Moenga_2018/"/>
+      <property name="src.data.dir" location="/data/v2/Cicer/arietinum/expression/CDCFrontier.gnm3.ann1.expr.mixed.Moenga_2018"/>
+    </source>
+    <!-- /data/v2/Cicer/arietinum/expression/ -->
+    <!-- └── CDCFrontier.gnm3.ann1.expr.mixed.Sutton_2018a -->
+    <source name="CDCFrontier.gnm3.ann1.expr.mixed.Sutton_2018a" type="lis-expression" dump="true">
+      <property name="dataSetUrl" value="https://data.legumeinfo.org/Cicer/arietinum/expression/CDCFrontier.gnm3.ann1.expr.mixed.Sutton_2018a/"/>
+      <property name="src.data.dir" location="/data/v2/Cicer/arietinum/expression/CDCFrontier.gnm3.ann1.expr.mixed.Sutton_2018a"/>
+    </source>
+    <!-- /data/v2/Cicer/arietinum/expression/ -->
+    <!-- └── CDCFrontier.gnm3.ann1.expr.mixed.Sutton_2018b -->
+    <source name="CDCFrontier.gnm3.ann1.expr.mixed.Sutton_2018b" type="lis-expression" dump="true">
+      <property name="dataSetUrl" value="https://data.legumeinfo.org/Cicer/arietinum/expression/CDCFrontier.gnm3.ann1.expr.mixed.Sutton_2018b/"/>
+      <property name="src.data.dir" location="/data/v2/Cicer/arietinum/expression/CDCFrontier.gnm3.ann1.expr.mixed.Sutton_2018b"/>
     </source>
 
     <!-- LEGUMES/Fabaceae/genefamilies/legume.genefam.fam1.M65K/ -->
@@ -105,7 +137,7 @@
 
     <!-- sequence ontology -->
     <source name="so" type="so">
-      <property name="src.data.file" location="/data/SO-Ontologies/so-simple.obo"/>
+      <property name="src.data.file" location="/data/SO-Ontologies/Ontology_Files/so-simple.obo"/>
     </source>
 
     <!-- plant ontology -->
@@ -140,11 +172,9 @@
 
   </sources>
 
-  <!-- ############### -->
-  <!-- post-processing -->
-  <!-- ############### -->
 
   <post-processing>
+
     <!-- IM CORE -->
     <post-process name="do-sources" />
     <post-process name="create-utr-references"/>
@@ -157,6 +187,7 @@
     <post-process name="create-gene-flanking-features"/>
 
     <!-- LIS -->
+    <post-process name="lis-create-genefamilytally" />
     <post-process name="lis-populate-publications"/>
 
     <!-- VIEWS AND INDEXES -->
@@ -166,6 +197,7 @@
     <post-process name="summarise-objectstore"/>
     <post-process name="create-autocomplete-index"/>
     <post-process name="create-search-index"/>
+
   </post-processing>
 
 </project>

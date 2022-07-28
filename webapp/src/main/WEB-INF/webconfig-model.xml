@@ -113,11 +113,10 @@
       <fieldconfig fieldExpr="strain.identifier" label="Strain" />
       <fieldconfig fieldExpr="length" displayer="/model/sequenceShortDisplayerWithField.jsp" showInInlineCollection="true" showInSummary="true" />
       <fieldconfig fieldExpr="description" label="Description" />
-      <fieldconfig fieldExpr="geneFamily.description" label="Gene family"/>
     </fields>
-    <!-- <bagdisplayers> -->
-    <!--   <displayer src="heatMap.tile" showOnLeft="true" /> -->
-    <!-- </bagdisplayers> -->
+    <bagdisplayers>
+      <displayer src="heatMap.tile" showOnLeft="true" />
+    </bagdisplayers>
   </class>
 
   <!-- add annotation widget -->
@@ -178,7 +177,6 @@
       <fieldconfig fieldExpr="length" displayer="/model/sequenceShortDisplayerWithField.jsp" />
       <fieldconfig fieldExpr="assemblyVersion" label="Assembly" />
       <fieldconfig fieldExpr="annotationVersion" label="Annotation" />
-      <fieldconfig fieldExpr="geneFamily.description" label="Gene family"/>
     </fields>
     <bagdisplayers>
       <displayer src="annotation.tile" showOnLeft="true" />
@@ -322,6 +320,16 @@
     </fields>
   </class>
 
+  <class className="org.intermine.model.bio.GeneFamilyAssignment">
+    <fields>
+      <fieldconfig fieldExpr="geneFamily.description" label="Description"/>
+      <fieldconfig fieldExpr="geneFamily.identifier" label="Identifier"/>
+      <fieldconfig fieldExpr="evalue" label="e-value" />
+      <fieldconfig fieldExpr="score" label="Score" />
+      <fieldconfig fieldExpr="bestDomainScore" label="Best Domain Score" />
+    </fields>
+  </class>
+
   <class className="org.intermine.model.bio.Pathway">
     <headerconfig>
       <titles>
@@ -331,6 +339,51 @@
     <fields>
       <fieldconfig fieldExpr="identifier"/>
       <fieldconfig fieldExpr="name"/>
+    </fields>
+  </class>
+
+  <class className="org.intermine.model.bio.ExpressionSource">
+    <headerconfig>
+      <titles>
+        <title mainTitles="primaryIdentifier" numberofMainTitlesToShow="1" />
+      </titles>
+    </headerconfig>
+    <fields>
+      <fieldconfig fieldExpr="primaryIdentifier" label="Name"/>
+      <fieldconfig fieldExpr="geoSeries" label="NCBI GEO Accession"/>
+      <fieldconfig fieldExpr="bioProject.accession" label="NCBI BioProject"/>
+      <fieldconfig fieldExpr="sra" label="NCBI SRA"/>
+    </fields>
+  </class>
+
+  <class className="org.intermine.model.bio.ExpressionSample">
+    <headerconfig>
+      <titles>
+        <title mainTitles="identifier" numberofMainTitlesToShow="1" />
+      </titles>
+    </headerconfig>
+    <fields>
+      <fieldconfig fieldExpr="identifier" label="Identifier"/>
+      <fieldconfig fieldExpr="name" label="Name"/>
+      <fieldconfig fieldExpr="description" label="Description"/>
+      <fieldconfig fieldExpr="species" label="Species"/>
+      <fieldconfig fieldExpr="genotype" label="Genotype"/>
+      <fieldconfig fieldExpr="developmentStage" label="Dev.Stage"/>
+      <fieldconfig fieldExpr="tissue" label="Tissue"/>
+      <fieldconfig fieldExpr="treatment" label="Treatment"/>
+      <fieldconfig fieldExpr="bioSample" label="BioSample"/>
+      <fieldconfig fieldExpr="sraExperiment" label="SRA Experiment"/>
+      <fieldconfig fieldExpr="replicateGroup" label="Replicate Group"/>
+    </fields>
+  </class>
+
+  <class className="org.intermine.model.bio.ExpressionValue">
+    <fields>
+      <fieldconfig fieldExpr="expressionSample.source.identifier" label="Source"/>
+      <fieldconfig fieldExpr="expressionSample.identifier" label="Sample ID"/>
+      <fieldconfig fieldExpr="expressionSample.description" label="Sample Description"/>
+      <fieldconfig fieldExpr="value" label="Value"/>
+      <fieldconfig fieldExpr="unit" label="Unit"/>
     </fields>
   </class>
 
@@ -369,6 +422,12 @@
                      placement="summary"
                      types="SequenceFeature"/>
 
+    <reportdisplayer javaClass="org.ncgr.intermine.bio.web.displayer.GeneBarchartDisplayer"
+                     jspName="model/geneBarchartDisplayer.jsp"
+                     replacesFields=""
+                     placement="summary"
+                     types="Gene"/>
+
   </reportdisplayers>
 
   <!-- widgets -->
@@ -400,7 +459,7 @@
                                startClassDisplay="primaryIdentifier"
                                enrich="ontologyAnnotations.ontologyTerm.name"
                                enrichIdentifier="ontologyAnnotations.ontologyTerm.identifier"
-                               constraints="ontologyAnnotations.ontologyTerm.ontology.name=GO,
+                               constraints="ontologyAnnotations.ontologyTerm.ontology.name=Gene Ontology,
                                             ontologyAnnotations.ontologyTerm.namespace=[Namespace],
                                             organism.name=[list]"
                                views="secondaryIdentifier,primaryIdentifier,organism.name,
@@ -410,15 +469,16 @@
     <enrichmentwidgetdisplayer id="genefamily_enrichment"
                                title="Gene Family Enrichment"
                                description="Gene families enriched for genes in this list."
-                               label="GeneFamily"
+                               label="Gene Family"
                                startClass="Gene"
                                startClassDisplay="primaryIdentifier"
-                               enrich="geneFamily.description"
-                               enrichIdentifier="geneFamily.description"
+                               enrich="geneFamilyAssignments.geneFamily.description"
+                               enrichIdentifier="geneFamilyAssignments.geneFamily.identifier"
                                constraints="organism.name=[list]"
                                typeClass="Gene"
-                               views="secondaryIdentifier, organism.name, geneFamily.description"/>
+                               views="secondaryIdentifier, organism.name, geneFamilyAssignments.geneFamily.description"/>
 
+    
     <enrichmentwidgetdisplayer id="pathway_enrichment"
                                title="Pathway Enrichment"
                                description="Pathways enriched for genes in this list."
