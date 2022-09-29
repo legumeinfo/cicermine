@@ -1,12 +1,10 @@
 #!/bin/sh
-rm -f validate-expression.md
-touch validate-expression.md
 for COLLECTION in CDCFrontier.gnm3.ann1.expr.CDC_Consul.Perilla-Henao_2018 \
                       CDCFrontier.gnm3.ann1.expr.Hybrid.Cook_2018 \
                       CDCFrontier.gnm3.ann1.expr.mixed.Moenga_2018 \
                       CDCFrontier.gnm3.ann1.expr.mixed.Sutton_2018a \
                       CDCFrontier.gnm3.ann1.expr.mixed.Sutton_2018b
 do
-    validate-expression-collection /data/v2/Cicer/arietinum/expression/$COLLECTION >> validate-expression.md
+    validate-expression-collection /data/v2/Cicer/arietinum/expression/$COLLECTION 
 done
     

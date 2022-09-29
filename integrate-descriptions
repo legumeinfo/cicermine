@@ -10,4 +10,3 @@ echo -e "#################################################################"
 ./gradlew integrate --stacktrace -Psource=cicar-description
 ./gradlew integrate --stacktrace -Psource=cicec-description
 ./gradlew integrate --stacktrace -Psource=cicre-description
-
