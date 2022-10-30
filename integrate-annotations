@@ -7,5 +7,5 @@ echo -e "########################### ${LP}ANNOTATION${NC} ######################
 echo -e "#################################################################"
 
 ./gradlew integrate --stacktrace -Psource=CDCFrontier.gnm3.ann1.NPD7
-#./gradlew integrate --stacktrace -Psource=S2Drd065.gnm1.ann1.YZ9H
-#./gradlew integrate --stacktrace -Psource=Besev079.gnm1.ann1.F01Z
+./gradlew integrate --stacktrace -Psource=S2Drd065.gnm1.ann1.YZ9H
+./gradlew integrate --stacktrace -Psource=Besev079.gnm1.ann1.F01Z
