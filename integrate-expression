@@ -11,4 +11,3 @@ echo -e "#################################################################"
 ./gradlew integrate --stacktrace -Psource=CDCFrontier.gnm3.ann1.expr.mixed.Moenga_2018
 ./gradlew integrate --stacktrace -Psource=CDCFrontier.gnm3.ann1.expr.mixed.Sutton_2018a
 ./gradlew integrate --stacktrace -Psource=CDCFrontier.gnm3.ann1.expr.mixed.Sutton_2018b
-
