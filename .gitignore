@@ -2,3 +2,6 @@
 *.log
 .gradle
 build
+add-triggers.sh
+remove-triggers.sh
+integrate-all

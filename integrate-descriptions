@@ -6,7 +6,9 @@ echo -e "#################################################################"
 echo -e "########################## ${LP}DESCRIPTIONS${NC} #########################"
 echo -e "#################################################################"
 
-## species/strain descriptions
-./gradlew integrate --stacktrace -Psource=cicar-description
-./gradlew integrate --stacktrace -Psource=cicec-description
-./gradlew integrate --stacktrace -Psource=cicre-description
+./gradlew integrate --stacktrace -Psource=Cicer-arietinum-description
+./gradlew integrate --stacktrace -Psource=Cicer-echinospermum-description
+./gradlew integrate --stacktrace -Psource=Cicer-reticulatum-description
+./gradlew integrate --stacktrace -Psource=Medicago-truncatula-description
+./gradlew integrate --stacktrace -Psource=Trifolium-pratense-description
+./gradlew integrate --stacktrace -Psource=Lotus-japonicus-description
