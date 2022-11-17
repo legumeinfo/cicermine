@@ -1,9 +1,0 @@
-#!/bin/sh
-NC='\033[0m'
-LP='\033[1;35m'
-echo -e "#################################################################"
-echo -e "############################ ${LP}SYNTENY${NC} ############################"
-echo -e "#################################################################"
-
-./gradlew integrate --stacktrace -Psource=CDCFrontier.gnm1.syn.7Bqh
-./gradlew integrate --stacktrace -Psource=ICC4958.gnm2.syn.PdvJ
