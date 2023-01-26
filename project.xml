@@ -6,24 +6,24 @@
 
     <!-- Cicer/arietinum/about_this_collection -->
     <source name="Cicer-arietinum-description" type="lis-description" dump="true" >
-      <property name="dataSetName" value="Cicer/arietinum/about_this_collection" />
+      <property name="dataSetName" value="Cicer-arietinum-description" />
       <property name="dataSetUrl" value="https://data.legumeinfo.org/Cicer/arietinum/about_this_collection/" />
       <property name="dataSetDescription" value="Cicer arietinum organism and strain information." />
-      <property name="src.data.dir" location="/data/v2/Cicer/arietinum/about_this_collection" />
+      <property name="src.data.dir" location="/home/shokin/data/v2/Cicer/arietinum/about_this_collection" />
     </source>
     <!-- Cicer/echinospermum/about_this_collection -->
     <source name="Cicer-echinospermum-description" type="lis-description" dump="true" >
-      <property name="dataSetName" value="Cicer/echinospermum/about_this_collection" />
+      <property name="dataSetName" value="Cicer-echinospermum-description" />
       <property name="dataSetUrl" value="https://data.legumeinfo.org/Cicer/echinospermum/about_this_collection/" />
       <property name="dataSetDescription" value="Cicer echinospermum organism and strain information." />
-      <property name="src.data.dir" location="/data/v2/Cicer/echinospermum/about_this_collection" />
+      <property name="src.data.dir" location="/home/shokin/data/v2/Cicer/echinospermum/about_this_collection" />
     </source>
     <!-- Cicer/reticulatum/about_this_collection -->
     <source name="Cicer-reticulatum-description" type="lis-description" dump="true" >
-      <property name="dataSetName" value="Cicer/reticulatum/about_this_collection" />
+      <property name="dataSetName" value="Cicer-reticulatum-description" />
       <property name="dataSetUrl" value="https://data.legumeinfo.org/Cicer/reticulatum/about_this_collection/" />
       <property name="dataSetDescription" value="Cicer reticulatum organism and strain information." />
-      <property name="src.data.dir" location="/data/v2/Cicer/reticulatum/about_this_collection" />
+      <property name="src.data.dir" location="/home/shokin/data/v2/Cicer/reticulatum/about_this_collection" />
     </source>
 
     <!-- Cicer/arietinum/genomes/CDCFrontier.gnm1.GkHc -->
@@ -31,17 +31,17 @@
       <property name="dataSetUrl" value="https://data.legumeinfo.org/Cicer/arietinum/genomes/CDCFrontier.gnm1.GkHc/" />
       <property name="lis-genome.className" value="org.intermine.model.bio.Chromosome" />
       <property name="lis-genome.includes" value="README.CDCFrontier.gnm1.GkHc.yml,cicar.CDCFrontier.gnm1.GkHc.genome_main.fna.gz" />
-      <property name="src.data.dir" location="/data/v2/Cicer/arietinum/genomes/CDCFrontier.gnm1.GkHc"/>
+      <property name="src.data.dir" location="/home/shokin/data/v2/Cicer/arietinum/genomes/CDCFrontier.gnm1.GkHc"/>
     </source>
     <!-- Cicer/arietinum/annotations/CDCFrontier.gnm1.ann1.nRhs -->
     <source name="CDCFrontier.gnm1.ann1.nRhs" type="lis-annotation" dump="true">
       <property name="dataSetUrl" value="https://data.legumeinfo.org/Cicer/arietinum/annotations/CDCFrontier.gnm1.ann1.nRhs/" />
-      <property name="src.data.dir" location="/data/v2/Cicer/arietinum/annotations/CDCFrontier.gnm1.ann1.nRhs"/>
+      <property name="src.data.dir" location="/home/shokin/data/v2/Cicer/arietinum/annotations/CDCFrontier.gnm1.ann1.nRhs"/>
     </source>
     <!-- Cicer/arietinum/synteny/CDCFrontier.gnm1.syn.7Bqh -->
     <source name="CDCFrontier.gnm1.syn.7Bqh" type="lis-synteny" dump="true">
       <property name="dataSetUrl" value="https://data.legumeinfo.org/Cicer/arietinum/synteny/CDCFrontier.gnm1.syn.7Bqh/" />
-      <property name="src.data.dir" location="/data/v2/Cicer/arietinum/synteny/CDCFrontier.gnm1.syn.7Bqh" />
+      <property name="src.data.dir" location="/home/shokin/data/v2/Cicer/arietinum/synteny/CDCFrontier.gnm1.syn.7Bqh" />
     </source>
 
     <!-- Cicer/arietinum/genomes/CDCFrontier.gnm2.S2FF -->
@@ -49,12 +49,12 @@
       <property name="dataSetUrl" value="https://data.legumeinfo.org/Cicer/arietinum/genomes/CDCFrontier.gnm2.S2FF/" />
       <property name="lis-genome.className" value="org.intermine.model.bio.Chromosome" />
       <property name="lis-genome.includes" value="README.CDCFrontier.gnm2.S2FF.yml,cicar.CDCFrontier.gnm2.S2FF.genome_main.fna.gz" />
-      <property name="src.data.dir" location="/data/v2/Cicer/arietinum/genomes/CDCFrontier.gnm2.S2FF"/>
+      <property name="src.data.dir" location="/home/shokin/data/v2/Cicer/arietinum/genomes/CDCFrontier.gnm2.S2FF"/>
     </source>
     <!-- Cicer/arietinum/annotations/CDCFrontier.gnm2.ann1.9M1L -->
     <source name="CDCFrontier.gnm2.ann1.9M1L" type="lis-annotation" dump="true">
       <property name="dataSetUrl" value="https://data.legumeinfo.org/Cicer/arietinum/annotations/CDCFrontier.gnm2.ann1.9M1L/" />
-      <property name="src.data.dir" location="/data/v2/Cicer/arietinum/annotations/CDCFrontier.gnm2.ann1.9M1L"/>
+      <property name="src.data.dir" location="/home/shokin/data/v2/Cicer/arietinum/annotations/CDCFrontier.gnm2.ann1.9M1L"/>
     </source>
 
     <!-- /data/v2/Cicer/arietinum/genomes/CDCFrontier.gnm3.QT0P/ -->
@@ -62,37 +62,37 @@
       <property name="lis-genome.dataSetUrl" value="https://data.legumeinfo.org/Cicer/arietinum/genomes/CDCFrontier.gnm3.QT0P/"/>
       <property name="lis-genome.className" value="org.intermine.model.bio.Chromosome"/>
       <property name="lis-genome.includes" value="README.CDCFrontier.gnm3.QT0P.yml,cicar.CDCFrontier.gnm3.QT0P.genome_main.fna.gz"/>
-      <property name="src.data.dir" location="/data/v2/Cicer/arietinum/genomes/CDCFrontier.gnm3.QT0P"/>
+      <property name="src.data.dir" location="/home/shokin/data/v2/Cicer/arietinum/genomes/CDCFrontier.gnm3.QT0P"/>
     </source>
     <!-- /data/v2/Cicer/arietinum/annotations/CDCFrontier.gnm3.ann1.NPD7/ -->
     <source name="CDCFrontier.gnm3.ann1.NPD7" type="lis-annotation" dump="true">
       <property name="dataSetUrl" value="https://data.legumeinfo.org/Cicer/arietinum/annotations/CDCFrontier.gnm3.ann1.NPD7"/>
-      <property name="src.data.dir" location="/data/v2/Cicer/arietinum/annotations/CDCFrontier.gnm3.ann1.NPD7"/>
+      <property name="src.data.dir" location="/home/shokin/data/v2/Cicer/arietinum/annotations/CDCFrontier.gnm3.ann1.NPD7"/>
     </source>
     <!-- /data/v2/Cicer/arietinum/expression/CDCFrontier.gnm3.ann1.expr.CDC_Consul.Perilla-Henao_2018 -->
     <source name="CDCFrontier.gnm3.ann1.expr.CDC_Consul.Perilla-Henao_2018" type="lis-expression" dump="true">
       <property name="dataSetUrl" value="https://data.legumeinfo.org/Cicer/arietinum/expression/CDCFrontier.gnm3.ann1.expr.CDC_Consul.Perilla-Henao_2018/"/>
-      <property name="src.data.dir" location="/data/v2/Cicer/arietinum/expression/CDCFrontier.gnm3.ann1.expr.CDC_Consul.Perilla-Henao_2018"/>
+      <property name="src.data.dir" location="/home/shokin/data/v2/Cicer/arietinum/expression/CDCFrontier.gnm3.ann1.expr.CDC_Consul.Perilla-Henao_2018"/>
     </source>
     <!-- /data/v2/Cicer/arietinum/expression/CDCFrontier.gnm3.ann1.expr.Hybrid.Cook_2018 -->
     <source name="CDCFrontier.gnm3.ann1.expr.Hybrid.Cook_2018" type="lis-expression" dump="true">
       <property name="dataSetUrl" value="https://data.legumeinfo.org/Cicer/arietinum/expression/CDCFrontier.gnm3.ann1.expr.Hybrid.Cook_2018/"/>
-      <property name="src.data.dir" location="/data/v2/Cicer/arietinum/expression/CDCFrontier.gnm3.ann1.expr.Hybrid.Cook_2018"/>
+      <property name="src.data.dir" location="/home/shokin/data/v2/Cicer/arietinum/expression/CDCFrontier.gnm3.ann1.expr.Hybrid.Cook_2018"/>
     </source>
     <!-- /data/v2/Cicer/arietinum/expression/CDCFrontier.gnm3.ann1.expr.mixed.Moenga_2018 -->
     <source name="CDCFrontier.gnm3.ann1.expr.mixed.Moenga_2018" type="lis-expression" dump="true">
       <property name="dataSetUrl" value="https://data.legumeinfo.org/Cicer/arietinum/expression/CDCFrontier.gnm3.ann1.expr.mixed.Moenga_2018/"/>
-      <property name="src.data.dir" location="/data/v2/Cicer/arietinum/expression/CDCFrontier.gnm3.ann1.expr.mixed.Moenga_2018"/>
+      <property name="src.data.dir" location="/home/shokin/data/v2/Cicer/arietinum/expression/CDCFrontier.gnm3.ann1.expr.mixed.Moenga_2018"/>
     </source>
     <!-- /data/v2/Cicer/arietinum/expression/CDCFrontier.gnm3.ann1.expr.mixed.Sutton_2018a -->
     <source name="CDCFrontier.gnm3.ann1.expr.mixed.Sutton_2018a" type="lis-expression" dump="true">
       <property name="dataSetUrl" value="https://data.legumeinfo.org/Cicer/arietinum/expression/CDCFrontier.gnm3.ann1.expr.mixed.Sutton_2018a/"/>
-      <property name="src.data.dir" location="/data/v2/Cicer/arietinum/expression/CDCFrontier.gnm3.ann1.expr.mixed.Sutton_2018a"/>
+      <property name="src.data.dir" location="/home/shokin/data/v2/Cicer/arietinum/expression/CDCFrontier.gnm3.ann1.expr.mixed.Sutton_2018a"/>
     </source>
     <!-- /data/v2/Cicer/arietinum/expression/CDCFrontier.gnm3.ann1.expr.mixed.Sutton_2018b -->
     <source name="CDCFrontier.gnm3.ann1.expr.mixed.Sutton_2018b" type="lis-expression" dump="true">
       <property name="dataSetUrl" value="https://data.legumeinfo.org/Cicer/arietinum/expression/CDCFrontier.gnm3.ann1.expr.mixed.Sutton_2018b/"/>
-      <property name="src.data.dir" location="/data/v2/Cicer/arietinum/expression/CDCFrontier.gnm3.ann1.expr.mixed.Sutton_2018b"/>
+      <property name="src.data.dir" location="/home/shokin/data/v2/Cicer/arietinum/expression/CDCFrontier.gnm3.ann1.expr.mixed.Sutton_2018b"/>
     </source>
 
     <!-- Cicer/arietinum/genomes/ICC4958.gnm2.bg5m -->
@@ -100,22 +100,22 @@
       <property name="dataSetUrl" value="https://data.legumeinfo.org/Cicer/arietinum/genomes/ICC4958.gnm2.bg5m/" />
       <property name="lis-genome.className" value="org.intermine.model.bio.Chromosome" />
       <property name="lis-genome.includes" value="README.ICC4958.gnm2.bg5m.yml,cicar.ICC4958.gnm2.bg5m.genome_main.fna.gz" />
-      <property name="src.data.dir" location="/data/v2/Cicer/arietinum/genomes/ICC4958.gnm2.bg5m"/>
+      <property name="src.data.dir" location="/home/shokin/data/v2/Cicer/arietinum/genomes/ICC4958.gnm2.bg5m"/>
     </source>
     <!-- Cicer/arietinum/annotations/ICC4958.gnm2.ann1.LCVX -->
     <source name="ICC4958.gnm2.ann1.LCVX" type="lis-annotation" dump="true">
       <property name="dataSetUrl" value="https://data.legumeinfo.org/Cicer/arietinum/annotations/ICC4958.gnm2.ann1.LCVX/" />
-      <property name="src.data.dir" location="/data/v2/Cicer/arietinum/annotations/ICC4958.gnm2.ann1.LCVX"/>
+      <property name="src.data.dir" location="/home/shokin/data/v2/Cicer/arietinum/annotations/ICC4958.gnm2.ann1.LCVX"/>
     </source>
     <!-- Cicer/arietinum/synteny/ICC4958.gnm2.syn.PdvJ -->
     <source name="ICC4958.gnm2.syn.PdvJ" type="lis-synteny" dump="true">
       <property name="dataSetUrl" value="https://data.legumeinfo.org/Cicer/arietinum/synteny/ICC4958.gnm2.syn.PdvJ/" />
-      <property name="src.data.dir" location="/data/v2/Cicer/arietinum/synteny/ICC4958.gnm2.syn.PdvJ" />
+      <property name="src.data.dir" location="/home/shokin/data/v2/Cicer/arietinum/synteny/ICC4958.gnm2.syn.PdvJ" />
     </source>
     <!-- Cicer/arietinum/expression/ICC4958.gnm2.ann1.expr.ICC4958.Singh_Garg_2013 -->
     <source name="ICC4958.gnm2.ann1.expr.ICC4958.Singh_Garg_2013" type="lis-expression" dump="true">
       <property name="dataSetUrl" value="https://data.legumeinfo.org/Cicer/arietinum/expression/ICC4958.gnm2.ann1.expr.ICC4958.Singh_Garg_2013/" />
-      <property name="src.data.dir" location="/data/v2/Cicer/arietinum/expression/ICC4958.gnm2.ann1.expr.ICC4958.Singh_Garg_2013" />
+      <property name="src.data.dir" location="/home/shokin/data/v2/Cicer/arietinum/expression/ICC4958.gnm2.ann1.expr.ICC4958.Singh_Garg_2013" />
     </source>
     
     <!-- /data/v2/Cicer/echinospermum/genomes/S2Drd065.gnm1.R888/ -->
@@ -123,12 +123,12 @@
       <property name="lis-genome.dataSetUrl" value="https://data.legumeinfo.org/Cicer/echinospermum/genomes/S2Drd065.gnm1.R888/"/>
       <property name="lis-genome.className" value="org.intermine.model.bio.Chromosome"/>
       <property name="lis-genome.includes" value="README.S2Drd065.gnm1.R888.yml,cicec.S2Drd065.gnm1.R888.genome_main.fna.gz"/>
-      <property name="src.data.dir" location="/data/v2/Cicer/echinospermum/genomes/S2Drd065.gnm1.R888"/>
+      <property name="src.data.dir" location="/home/shokin/data/v2/Cicer/echinospermum/genomes/S2Drd065.gnm1.R888"/>
     </source>
     <!-- /data/v2/Cicer/echinospermum/annotations/S2Drd065.gnm1.ann1.YZ9H/ -->
     <source name="S2Drd065.gnm1.ann1.YZ9H" type="lis-annotation" dump="true">
       <property name="dataSetUrl" value="https://data.legumeinfo.org/Cicer/echinospermum/annotations/S2Drd065.gnm1.ann1.YZ9H"/>
-      <property name="src.data.dir" location="/data/v2/Cicer/echinospermum/annotations/S2Drd065.gnm1.ann1.YZ9H"/>
+      <property name="src.data.dir" location="/home/shokin/data/v2/Cicer/echinospermum/annotations/S2Drd065.gnm1.ann1.YZ9H"/>
     </source>
     
     <!-- /data/v2/Cicer/reticulatum/genomes/Besev079.gnm1.2FZC -->
@@ -136,35 +136,35 @@
       <property name="lis-genome.dataSetUrl" value="https://data.legumeinfo.org/Cicer/reticulatum/genomes/Besev079.gnm1.2FZC/"/>
       <property name="lis-genome.className" value="org.intermine.model.bio.Chromosome"/>
       <property name="lis-genome.includes" value="README.Besev079.gnm1.2FZC.yml,cicre.Besev079.gnm1.2FZC.genome_main.fna.gz"/>
-      <property name="src.data.dir" location="/data/v2/Cicer/reticulatum/genomes/Besev079.gnm1.2FZC"/>
+      <property name="src.data.dir" location="/home/shokin/data/v2/Cicer/reticulatum/genomes/Besev079.gnm1.2FZC"/>
     </source>
     <!-- /data/v2/Cicer/reticulatum/annotations/Besev079.gnm1.ann1.F01Z -->
     <source name="Besev079.gnm1.ann1.F01Z" type="lis-annotation" dump="true">
       <property name="dataSetUrl" value="https://data.legumeinfo.org/Cicer/reticulatum/annotations/Besev079.gnm1.ann1.F01Z/"/>
-      <property name="src.data.dir" location="/data/v2/Cicer/reticulatum/annotations/Besev079.gnm1.ann1.F01Z"/>
+      <property name="src.data.dir" location="/home/shokin/data/v2/Cicer/reticulatum/annotations/Besev079.gnm1.ann1.F01Z"/>
     </source>
 
     <!-- EXTRA STRAINS FOR SYNTENY -->
     <!-- Medicago/truncatula/about_this_collection -->
     <source name="Medicago-truncatula-description" type="lis-description" dump="true" >
-      <property name="dataSetName" value="Medicago/truncatula/about_this_collection" />
+      <property name="dataSetName" value="Medicago-truncatula-description" />
       <property name="dataSetUrl" value="https://data.legumeinfo.org/Medicago/truncatula/about_this_collection/" />
       <property name="dataSetDescription" value="Medicago truncatula organism and strain information." />
-      <property name="src.data.dir" location="/data/v2/Medicago/truncatula/about_this_collection" />
+      <property name="src.data.dir" location="/home/shokin/data/v2/Medicago/truncatula/about_this_collection" />
     </source>
     <!-- Trifolium/pratense/about_this_collection -->
     <source name="Trifolium-pratense-description" type="lis-description" dump="true" >
-      <property name="dataSetName" value="Trifolium/pratense/about_this_collection" />
+      <property name="dataSetName" value="Trifolium-pratense-description" />
       <property name="dataSetUrl" value="https://data.legumeinfo.org/Trifolium/pratense/about_this_collection/" />
       <property name="dataSetDescription" value="Trifolium pratense organism and strain information." />
-      <property name="src.data.dir" location="/data/v2/Trifolium/pratense/about_this_collection" />
+      <property name="src.data.dir" location="/home/shokin/data/v2/Trifolium/pratense/about_this_collection" />
     </source>
     <!-- Lotus/japonicus/about_this_collection -->
     <source name="Lotus-japonicus-description" type="lis-description" dump="true" >
-      <property name="dataSetName" value="Lotus/japonicus/about_this_collection" />
+      <property name="dataSetName" value="Lotus-japonicus-description" />
       <property name="dataSetUrl" value="https://data.legumeinfo.org/Lotus/japonicus/about_this_collection/" />
       <property name="dataSetDescription" value="Lotus japonicus organism and strain information." />
-      <property name="src.data.dir" location="/data/v2/Lotus/japonicus/about_this_collection" />
+      <property name="src.data.dir" location="/home/shokin/data/v2/Lotus/japonicus/about_this_collection" />
     </source>
 
     <!-- ################################################################################################### -->
@@ -172,13 +172,13 @@
     <!-- LEGUMES/Fabaceae/genefamilies/legume.genefam.fam1.M65K/ -->
     <source name="legume.genefam.fam1.M65K" type="lis-genefamily" dump="true">
       <property name="dataSetUrl" value="https://data.legumeinfo.org/LEGUMES/Fabaceae/genefamilies/legume.genefam.fam1.M65K/" />
-      <property name="src.data.dir" location="/data/v2/LEGUMES/Fabaceae/genefamilies/legume.genefam.fam1.M65K"/>
+      <property name="src.data.dir" location="/home/shokin/data/v2/LEGUMES/Fabaceae/genefamilies/legume.genefam.fam1.M65K"/>
     </source>
 
     <!-- LEGUMES/Fabaceae/genefamilies/legume.genefam.fam1.M65K/legume.genefam.fam1.M65K.trees_ML_rooted/ -->
     <source name="legume.genefam.fam1.M65K.trees_ML_rooted" type="lis-phylotree" dump="true">
       <property name="dataSetUrl" value="https://data.legumeinfo.org/LEGUMES/Fabaceae/genefamilies/legume.genefam.fam1.M65K/"/>
-      <property name="src.data.dir" location="/data/v2/LEGUMES/Fabaceae/genefamilies/legume.genefam.fam1.M65K"/>
+      <property name="src.data.dir" location="/home/shokin/data/v2/LEGUMES/Fabaceae/genefamilies/legume.genefam.fam1.M65K"/>
     </source>
 
     <!-- INTERPRO -->
@@ -186,7 +186,7 @@
       <property name="data.source.name" value="InterPro"/>
       <property name="data.source.description" value="XML file listing each InterPro entry."/>
       <property name="data.source.url" value="ftp://ftp.ebi.ac.uk/pub/databases/interpro/"/>
-      <property name="src.data.dir" location="/data/InterPro/"/>
+      <property name="src.data.dir" location="/home/shokin/data/InterPro/"/>
     </source>
 
     <!-- InterPro2GO -->
@@ -194,32 +194,32 @@
       <property name="data.source.name" value="InterPro2GO"/>
       <property name="data.source.description" value="Mappings of InterPro entries to Gene Ontology (GO) terms."/>
       <property name="data.source.url" value="ftp://ftp.ebi.ac.uk/pub/databases/interpro/"/>
-      <property name="src.data.dir" location="/data/InterPro/ontology/"/>
+      <property name="src.data.dir" location="/home/shokin/data/InterPro/ontology/"/>
     </source>
 
     <!-- Pfam -->
     <source name="pfam-term" type="pfam-term">
-      <property name="src.data.dir" location="/data/Pfam/"/>
+      <property name="src.data.dir" location="/home/shokin/data/Pfam/"/>
     </source>
 
     <!-- PANTHER terms -->
     <source name="panther-term" type="panther-term">
-      <property name="src.data.dir" location="/data/PANTHER/"/>
+      <property name="src.data.dir" location="/home/shokin/data/PANTHER/"/>
     </source>
 
     <!-- gene ontology -->
     <source name="go" type="go">
-      <property name="src.data.file" location="/data/gene-ontology/go-basic.obo"/>
+      <property name="src.data.file" location="/home/shokin/data/gene-ontology/go-basic.obo"/>
     </source>
 
     <!-- sequence ontology -->
     <source name="so" type="so">
-      <property name="src.data.file" location="/data/SO-Ontologies/Ontology_Files/so-simple.obo"/>
+      <property name="src.data.file" location="/home/shokin/data/SO-Ontologies/Ontology_Files/so-simple.obo"/>
     </source>
 
     <!-- plant ontology -->
     <source name="plant-ontology" type="obo">
-      <property name="src.data.file" location="/data/plant-ontology/po.obo"/>
+      <property name="src.data.file" location="/home/shokin/data/plant-ontology/po.obo"/>
       <property name="ontology.prefix" value="PO"/>
       <property name="obo.ontology.name" value="Plant Ontology"/>
       <property name="obo.ontology.url" value="http://planteome.org/"/>
@@ -229,7 +229,7 @@
 
     <!-- plant trait ontology -->
     <source name="plant-trait-ontology" type="obo">
-      <property name="src.data.file" location="/data/plant-trait-ontology/to.obo"/>
+      <property name="src.data.file" location="/home/shokin/data/plant-trait-ontology/to.obo"/>
       <property name="ontology.prefix" value="TO"/>
       <property name="obo.ontology.name" value="Plant Trait Ontology"/>
       <property name="obo.ontology.url" value="http://www.obofoundry.org/ontology/to.html"/>
@@ -239,7 +239,7 @@
     
     <!-- chickpea crop ontology -->
     <source name="chickpea-crop-ontology" type="obo">
-      <property name="src.data.file" location="/data/crop-ontology/CO_338.obo"/>
+      <property name="src.data.file" location="/home/shokin/data/crop-ontology/CO_338.obo"/>
       <property name="ontology.prefix" value="CO_338"/>
       <property name="obo.ontology.name" value="Chickpea Crop Ontology"/>
       <property name="obo.ontology.url" value="https://www.cropontology.org/ontology/CO_338/Chickpea"/>
