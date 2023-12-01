@@ -178,10 +178,10 @@
       <property name="src.data.dir" location="/home/shokin/v2/LEGUMES/Fabaceae/genefamilies/legume.genefam.fam1.M65K"/>
     </source>
 
-    <!-- Cicer/GENUS/pangenes/Cicer.pan1.SV8C -->
-    <source name="Cicer.pan1.SV8C" type="lis-pangene" dump="true">
-      <property name="dataSetUrl" value="https://data.legumeinfo.org/Cicer/GENUS/pngenes/Cicer.pan1.SV8C/" />
-      <property name="src.data.dir" location="/home/shokin/v2/Cicer/GENUS/pangenes/Cicer.pan1.SV8C"/>
+    <!-- Cicer/GENUS/pangenes/Cicer.pan2.CMWZ -->
+    <source name="Cicer.pan2.CMWZ" type="lis-pangene" dump="true">
+      <property name="dataSetUrl" value="https://data.legumeinfo.org/Cicer/GENUS/pngenes/Cicer.pan2.CMWZ/" />
+      <property name="src.data.dir" location="/home/shokin/v2/Cicer/GENUS/pangenes/Cicer.pan2.CMWZ"/>
     </source>
 
     <!-- ####################################### NON-LIS ############################################ -->
@@ -263,9 +263,9 @@
     <post-process name="make-spanning-locations"/>
     <post-process name="create-chromosome-locations-and-lengths"/>
     <post-process name="create-intergenic-region-features"/>
-    <post-process name="transfer-sequences"/>
     <post-process name="populate-child-features"/>
     <post-process name="create-gene-flanking-features"/>
+    <post-process name="transfer-sequences"/>
 
     <!-- LIS -->
     <post-process name="lis-create-genefamilytally" />
